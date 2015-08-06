@@ -20,14 +20,24 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - PKRevealController (2.0.6)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - PKRevealController (~> 2.0.6)
+  - YTKKeyValueStore (~> 0.1.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
 COCOAPODS: 0.38.2
