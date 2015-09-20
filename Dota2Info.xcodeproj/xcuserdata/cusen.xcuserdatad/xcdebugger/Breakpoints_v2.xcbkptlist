@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dota2Info/ItemsViewController.m"
-            timestampString = "458064605.299385"
+            timestampString = "464326769.942658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-loadItemData"
             landmarkType = "5">
          </BreakpointContent>
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dota2Info/ItemsViewController.m"
-            timestampString = "458137083.649108"
+            timestampString = "464326769.942658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-loadDataFinish:"
             landmarkType = "5">
          </BreakpointContent>

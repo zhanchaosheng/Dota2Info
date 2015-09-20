@@ -8,11 +8,15 @@
 
 #import "ItemsViewController.h"
 #import "BaseOperation.h"
+#import "AppDelegate.h"
+//#import "MarkView.h"
+#import "UIViewController+showMarkView.h"
 
 @interface ItemsViewController ()
 @property (nonatomic, strong) UITableView *itemTableView;
 @property (nonatomic, strong) NSMutableArray *itemKeyArray;
 @property (nonatomic, strong) NSMutableDictionary *itemDict;
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation ItemsViewController
@@ -22,6 +26,10 @@
     // Do any additional setup after loading the view.
     self.title = @"物品";
     [self.view setBackgroundColor:[UIColor purpleColor]];
+    
+    //创建导航条左边按钮
+    UIBarButtonItem *barLeftBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(showMarkView)];
+    self.navigationItem.leftBarButtonItem = barLeftBtn;
     
     //创建ItemTableView
     self.itemTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
@@ -44,6 +52,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)showMarkView
+{
+//    CGRect rect = [UIScreen mainScreen].bounds;
+//    MarkView *markView = [[MarkView alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height)];
+//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [appDelegate.window addSubview:markView];
+    [self showSelectMarkView];
 }
 
 #pragma mark - LoadData
